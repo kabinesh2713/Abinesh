@@ -1,5 +1,4 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
 		*{
 		margin:0;
 		padding:0;
@@ -18,7 +17,6 @@
 		}
 		.sec-title{
 		width:100%;
-		margin:50px 0px;
 		text-align: center;
 		}
 		.sec-title h1{
@@ -210,64 +208,11 @@
 		width:30%;
 		position: relative;
 		}
-		.servicesection::before{
-		content:"";
-		position:absolute;
-		border-radius:50%;
-		height:75px;
-		width:75px;
-		left:340px;
-		bottom:17px;
-		background:linear-gradient(#00ccff,#d400d4,green,#ff00c8,red,blue);
-		animation:animate1 4s linear infinite;
-		}
-		.servicesection::after{
-		content:"";
-		position:absolute;
-		inset:10px;
-		border-radius:50%;
-		height:80px;
-		width:80px;
-		}
-		@keyframes animate1{
-		0%{
-		transform:rotate(0deg);
-		}
-		100%{
-		transform:rotate(360deg);
-		}
-		}
-		.serviceone::before{
-		content:"";
-		position:absolute;
-		border-radius:50%;
-		height:50px;
-		width:50px;
-		left:3px;
-		background:linear-gradient(#00ccff,#d400d4,green,#ff00c8,red,blue);
-		animation:animate2 4s linear infinite;
-		}
-		.serviceone::after{
-		content:"";
-		position:absolute;
-		inset:10px;
-		border-radius:10%;
-		height:80px;
-		width:80px;
-		}
-		@keyframes animate2{
-		0%{
-		transform:rotate(360deg);
-		}
-		100%{
-		transform:rotate(360deg);
-		}
-		}
 		.serviceone::before{
 		position:absolute;
 		content:"";
 		width:80px;
-		bottom:-45px;
+		bottom:-75px;
 		left:-165px;
 		border:3px solid #e66e07f5;
 		border-radius:10px;
@@ -277,7 +222,7 @@
 		position:absolute;
 		content:"";
 		width:80px;
-		bottom:-60px;
+		bottom:-70px;
 		left:320px;
 		border:3px solid #e66e07f5;
 		border-radius:10px;
@@ -364,7 +309,7 @@
 		}
 		/*============= menu start============*/
 		.menusection{	
-		padding:50px 0;
+		padding-top:80px;
 		}
 		.flexmenu{
 		display:flex;
@@ -444,6 +389,9 @@
 		margin-top: 45px;
 		}
 		/*=========Portfolio start=======*/
+		.portfoliosection{
+		padding-top:80px;
+		}
 		.flexspecial{
 		display:flex;
 		flex-wrap:wrap;
@@ -473,14 +421,15 @@
 		transition: all  ease 0.5s;
 		}
 		/*=========contact start=======*/
-		#contact-sec{
-		padding:10px 0;
+		.contact{
+		padding-top:80px;
 		}
 		.servicesect{
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:space-evenly;
 		cursor:pointer;
+		margin-top:50px;
 		}
 		.col-lg-6{
 		width:45%
@@ -837,7 +786,7 @@
 		font-size:22px;
 		}
 		}
-		@media (min-width:768px) and (max-width:992px){
+		@media (min-width:768px) and (max-width:998px){
 		.bannercontent h3{
 		font-size:50px;
 		text-align:center;
@@ -945,5 +894,55 @@
 		}
 		.nav-menu.active {
 		left: 0;
+		}
+		.servicecontent{
+			position:relative;
+		}
+		.servicecontent .img-2{
+		width: 80%;
+		position: absolute;
+		top:200px;
+		left: -50px;
+		bottom: 0;
+		border-radius:15px;
+		}
+		.menucontent{
+			position:relative;
+		}
+		.menucontent::before{
+		position:absolute;
+		content:"";
+		border:1px solid #e66e07f5;
+		height:20px;
+		width:20px;
+		background:#e66e07f5;
+		border-radius:50%;
+		bottom:230px;
+		right:-20px;
+		}
+		.menucontent2{
+			position:relative;
+		}
+				.menucontent2::after{
+		position:absolute;
+		content:"";
+		border-left:3px solid #e66e07f5;
+		height:450px;
+		border-radius:10px;
+		top:-20px;
+		left:-70px;
+		}
+		.serviceone{
+			position:relative;
+		}
+		.serviceone::before{
+		position:absolute;
+		content:"";
+		width:80px;
+		bottom:150px;
+		left:-235px;
+		border:3px solid #e66e07f5;
+		border-radius:10px;
+		height:80px;
 		}
 		}
